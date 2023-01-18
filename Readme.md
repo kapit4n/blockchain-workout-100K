@@ -6,8 +6,8 @@ S(0)
 S(0)
 
 ## CONTRACTS
-example-01-02-2023.sol(542), 
-S(542)
+truffle-contract-metacoin-01-03-2023.sol(107), example-01-02-2023.sol(542), 
+S(649)
 
 ## ALGORITHMS
 
@@ -18,8 +18,8 @@ S(0)
 S(0)
 
 ## FRAMEWORKS
-
-S(0)
+react-truffle-01-03-2023.js(369), 
+S(369)
 
 S(0)
 
@@ -28,4 +28,4 @@ S(0)
 S(0)
 
 # Total 
-542
+1018

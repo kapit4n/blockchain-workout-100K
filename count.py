@@ -2,7 +2,7 @@ import os
 import pathlib
 
 # config options
-extensions = ['.sol']
+extensions = ['.sol', '.js']
 ignore_file = './src-ig'
 src_file = './src'
 readmeFileName = "./Readme.md"
