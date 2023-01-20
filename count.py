@@ -25,6 +25,9 @@ def countLines(path):
 total = 0
 fReadme.write("## Categories")
 
+fMachine = open(machineName, "w")
+fMachine.write(str(total))
+
 for x_file in [ignore_file, src_file]:
     total = total + countLines(x_file)
     for f in os.listdir(x_file):
@@ -33,18 +36,17 @@ for x_file in [ignore_file, src_file]:
         if (os.path.isdir(pathFull)):
             total = total + countLines(pathFull)
 
-print(total)
+print("total local: " + str(total))
 
 for cfile in os.listdir("."):
     if cfile.endswith(".house.txt") and not cfile.endswith(machineName):
-        print(os.path.join("/", cfile))
+        # print(os.path.join("/", cfile))
         with open(cfile, "r") as txt_file:
             otherTotal = int(txt_file.readlines()[0])
             fReadme.write("\n# Other Total \n" + str(otherTotal))
             total = total + otherTotal
 
-fMachine = open(machineName, "w")
-fMachine.write(str(total))
 
 fReadme.write("\n# Total \n" + str(total))
+print(total)
 
